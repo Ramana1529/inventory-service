@@ -3,7 +3,9 @@ package com.example.inventory_service.mapper;
 import com.example.inventory_service.dto.ProductRequestDTO;
 import com.example.inventory_service.dto.ProductResponseDTO;
 import com.example.inventory_service.entity.Product;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ProductMapper {
     public Product toEntity(ProductRequestDTO productRequestDTO){
         Product product = new Product();
