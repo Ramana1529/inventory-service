@@ -32,7 +32,7 @@ public class Product {
     private LocalDateTime createdAt;
     @Column(nullable = false)
     private LocalDateTime updatedAt;
-    protected Product() {
+    public Product() {
     }
     @PrePersist
     protected void onCreate() {
